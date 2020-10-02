@@ -1,0 +1,142 @@
+.block_lvhd
+	.row
+		margin-top: 60px
+		margin-bottom: 80px
+		@media screen and ( max-width: 576px )
+			margin-top: 30px
+			margin-bottom: 30px
+		&:nth-child(2n)
+			.col-lg-6
+				&:nth-child(2n+1)
+					order: 2
+					@media screen and ( max-width: 576px )
+						order: inherit
+				.text_box
+					padding-right: 40px
+		&:nth-child(2n+1)
+			.col-lg-6
+				&:nth-child(2n+1)
+				.text_box
+					padding: 0 40px
+	.card_img
+		.img
+			img
+				width: 100%
+	.fl
+		display: flex
+		align-items: center
+
+	.lvhd
+		.title-lvhd
+			h2
+				font-size: 30px
+				color: #fbbf33
+				padding-bottom: 10px
+				@media screen and ( max-width: 576px )
+					padding-top: 10px
+		.text-lvhd
+			p
+				font-size: 16px
+				color: #333333
+				margin-bottom: 15px
+				@media screen and ( max-width: 1024.98px )
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 5
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsis
+					height: 125px
+				@media screen and ( max-width: 576px )
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 5
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsis
+					height: 120px
+
+	.modal
+		position: fixed
+		z-index: 10
+		right: 0
+		left: 0
+		bottom: -50%
+		transform: translate(0%, 50%)
+		transition: bottom 0.4s
+		.col-xl-12
+			background-color: #fff
+			padding: 25px 10px
+			.row
+				margin: 0
+		.close-btn
+			position: absolute
+			top: 0
+			right: 0
+			font-size: 30px
+			background-color: #fbbf33
+			padding: 0 8px
+			color: #fff
+			cursor: pointer
+			z-index: 10
+
+		.title-modal
+			padding: 0 20px
+			padding-bottom: 20px
+			h2
+				font-size: 30px
+				color: #fbbf33
+		.text-modal
+			padding: 0 20px
+			height: 250px
+			overflow-y: scroll
+			scrollbar-width: thin
+			scrollbar-color: #fbbf33
+			&::-webkit-scrollbar
+				background: #fbbf33
+				width: 5px
+			&::-webkit-scrollbar-track
+				-webkit-box-shadow: inset 0 0 6px #b2b2b2
+				background-color: #b2b2b2
+			&::-webkit-scrollbar-thumb
+				background-color: #fbbf33
+
+	.modal.show
+		bottom: 50%
+
+.overlay
+	position: fixed
+	display: none
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background-color: rgba(0,0,0,0.7)
+	z-index: 9
+	transition: .5s ease !important
+.overlay.show
+	display: block
+
+
+.readmore
+	display: inline-block
+	a
+		color:#333333
+		border: 2px solid #333333
+		border-radius: 25px
+		width: 150px
+		height: 45px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		span
+			font-size: 24px
+			padding-left: 10px
+	&:hover
+		a
+			color: #ffffff !important
+			background: #fbbf33
+			border: none
+			span
+				color: #ffffff

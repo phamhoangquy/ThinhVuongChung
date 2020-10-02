@@ -1,0 +1,74 @@
+.block_media
+	padding: 60px 0 0 0
+	.col-lg-4
+		margin-bottom: 30px
+	.item-media
+		.card_img
+			border-bottom: 3px solid #c7931c
+			position: relative
+			.img
+				padding-top: 406 / 650 * 100%
+				position: relative
+				img
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					object-fit: cover
+			.text_media
+				.text
+					background: #902906
+					position: absolute
+					top: 50px
+					font-size: 12px
+					text-transform: uppercase
+					color: #ffffff
+					padding: 5px
+		.content-media
+			padding: 20px
+			box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
+			border-radius: 10px
+			// border-top: 1px solid #c7931c
+			.date
+				time
+					font-size: 14px
+					color: #fbbf33
+			.card_title_media
+				font-weight: 600
+				padding-top: 10px
+				text-transform: uppercase
+				a
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 2
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					font-weight: 600
+					text-overflow: ellipsis
+					text-transform: uppercase
+					font-size: 18px
+					color: #111111
+			.card_title_zone_media
+				padding: 10px 0 25px 0
+				p
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 2
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsis
+					font-size: 16px
+					color: #111111
+			.icon
+				display: flex
+				justify-content: flex-end
+				em 
+					color: #fbbf33
+	&:hover
+		.item-media
+			.content-media
+				.card_title_media
+					a
+						&:hover
+							color: #fbbf33

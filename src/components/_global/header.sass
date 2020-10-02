@@ -1,0 +1,181 @@
+.header_top
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 10
+	padding: 15px 0
+	border-bottom: 1px solid #ffffff
+	transition: top 0.3s
+	.header
+		display: flex
+		align-items: center
+		height: 60px
+		.header_left
+			flex: 0 0 39%
+		.header_logo
+			flex: 1
+			img
+				max-width: 100%
+				margin: 0 auto
+				display: block
+		.header_right
+			flex: 0 0 39%
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			.search_top
+				margin-right: 8px
+				margin-top: 2px
+				i
+					color: #ffffff
+					font-size: 18px
+					border: 1px solid #ffffff
+					padding: 11px
+					border-radius: 50%
+					cursor: pointer
+					&:hover
+						color: #ffffff
+						border: 1px solid #ffffff
+			select
+				background-color: transparent
+				border: 1px solid #ffffff
+				border-radius: 30px
+				padding: 10px 8px
+				font-size: 14px
+				color: #fff
+
+				option
+					color: #000
+
+	.header_menu
+		ul
+			display: flex
+			justify-content: center
+			list-style: none
+			text-transform: uppercase
+
+			li
+				margin-top: 25px
+				padding: 0 20px
+
+				a
+					color: #ffffff
+					font-size: 14px
+					padding: 5px 0
+					&:hover
+						border-bottom: 1px solid #ffffff
+
+.header_bot
+	position: fixed
+	top: -100px
+	background-color: rgba(251,191,51,0.8)
+	border-bottom: unset
+	padding: 0
+	left: 0
+	right: 0
+	z-index: 10
+	transition: top 0.3s
+
+	.header
+		display: flex
+		align-items: center
+		height: 60px
+		.header_left
+			flex: 0 0 39%
+		.header_logo
+			flex: 1
+			img
+				max-width: 100%
+				margin: 0 auto
+				display: block
+		.header_right
+			flex: 0 0 39%
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			.search_top
+				margin-right: 8px
+				margin-top: 2px
+				i
+					color: #111111
+					font-size: 18px
+					border: 1px solid #111111
+					padding: 7px
+					border-radius: 50%
+					cursor: pointer
+					&:hover
+						color: #ffffff
+						border: 1px solid #ffffff
+			select
+				background-color: transparent
+				border: 1px solid #111111
+				border-radius: 30px
+				padding: 6px 5px
+				font-size: 14px
+				color: #111111
+				cursor: pointer
+				&:hover
+					color: #ffffff
+					border: 1px solid #ffffff
+
+				option
+					color: #000
+			.button_menu
+				display: none
+				i
+					font-size: 30px
+					cursor: pointer
+					margin-left: 15px
+
+			.button_menu.click
+				i:before
+					content: '\f00d'
+	.menu
+		ul
+			padding: 0
+			display: flex
+			list-style: none
+			text-transform: uppercase
+			li
+				padding-right: 20px
+				a
+					color: #111111
+					font-size: 14px
+					padding: 5px 0
+					&:hover
+						color: #ffffff
+						border-bottom: 1px solid #ffffff
+				i
+					color: #111111
+					font-size: 18px
+					border: 1px solid #111111
+					padding: 5px
+					border-radius: 50%
+					cursor: pointer
+					&:hover
+						color: #ffffff
+						border: 1px solid #ffffff
+	.sidebar
+		position: absolute
+		top: 60px
+		left: -100%
+		width: 100%
+		background-color: rgba(251,191,51,0.8)
+		transition: left 0.4s ease
+		ul
+			padding: 0
+			list-style: none
+			text-align: center
+			li
+				padding: 8px 0
+				text-transform: uppercase
+				border-bottom: 1px solid #fff
+				a
+					color: #111111
+					padding: 5px 0
+					&:hover
+						color: #ffffff
+						border-bottom: 2px solid #ffffff
+	.sidebar.show
+		left: 0
