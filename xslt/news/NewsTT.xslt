@@ -12,7 +12,14 @@
 			<div class="item-media">
 				<div class="card_img">
 					<div class="img">
-						<img class=" ">
+						<a>
+						<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+						<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+						<img>
 							<xsl:attribute name="src">
 								<xsl:value-of select="ImageUrl"></xsl:value-of>
 							</xsl:attribute>
@@ -20,6 +27,7 @@
 								<xsl:value-of select="Title"></xsl:value-of>
 							</xsl:attribute>
 						</img>
+					</a>
 					</div>
 					<xsl:if test="floor(ShowOption div 1) mod 2 = 1">
 						<div class="text_media">

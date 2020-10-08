@@ -7,11 +7,18 @@
 	.block-title-active
 		display: flex
 		justify-content: space-between
+		@media screen and ( max-width: 576px )
+			display: block
 		.block-title
 			display: flex
 			justify-content: center
 			align-items: center
+			@media screen and ( max-width: 576px )
+				display: flex
+				justify-content: flex-start
 	.btn-view-more
+		@media screen and ( max-width: 576px )
+			padding-top: 20px
 		a
 			color: rgb(31, 26, 26)
 			border: 1px solid rgb(153, 153, 153)
@@ -72,6 +79,8 @@
 					overflow: hidden
 					text-overflow: ellipsis
 					height: 78px
+					@media screen and ( max-width: 576px )
+						font-size: 18px
 			.date
 				time
 					font-size: 12px

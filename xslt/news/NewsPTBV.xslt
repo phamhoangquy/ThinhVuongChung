@@ -88,19 +88,38 @@
 		<div class="col-12 col-md-6 col-lg-4">
 			<div class="card_img">
 				<div class="img">
-					<img class=" ">
-						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
+					<a>
+						<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
 						</xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="Title"></xsl:value-of>
+						<xsl:attribute name="title">
+						<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
-					</img>
+						<img>
+							<xsl:attribute name="src">
+								<xsl:value-of select="ImageUrl"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="alt">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+						</img>
+					</a>
 				</div>
 			</div>
 			<div class="content-deve">
 				<div class="title-deve">
-					<h3><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of><xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of></h3>
+					<h3>
+						<a>
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+							<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+						</a>
+					</h3>
 				</div>
 				<div class="item-develope">
 					<div class="date">

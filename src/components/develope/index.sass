@@ -18,6 +18,8 @@
 					padding-right: 40px
 				.develope
 					padding: 30px 0 0 0
+					@media screen and ( max-width: 576px )
+						padding: 30px 0 0 0
 		&:nth-child(2n+1)
 			.col-lg-6
 				&:nth-child(2n+1)
@@ -30,12 +32,15 @@
 				width: 100%
 	.develope
 		padding: 30px 0 0 30px
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 0 0
 		.title-develope
 			h2
 				font-size: 30px
 				color: #fbbf33
 				@media screen and ( max-width: 576px )
 					font-size: 20px
+				
 		.text-develope
 			padding-top: 24px
 			ul
@@ -45,9 +50,11 @@
 					padding-bottom: 24px
 					position: relative
 					padding-left: 24px
+					@media screen and ( max-width: 576px )
+						text-align: justify
 					&::before
 						position: absolute
-						top: 0
+						top: 5px
 						left: 0
 						z-index: 9
 						transition: all .3s ease-in-out
@@ -55,12 +62,14 @@
 						font-family: Linearicons-Free
 						content: "\e876"
 						font-size: 12px
+						color: #111111
+						font-weight: 800
 					p
 						font-size: 16px
-						padding-left: 20px
 						color: #333333
 						@media screen and ( max-width: 576px )
 							font-size: 14px
+							text-align: justify
 						
 		.btn-view-more
 			a
@@ -118,6 +127,11 @@
 			h3
 				color: #333333
 				font-size: 18px
+				a
+					color: #333333
+					font-size: 18px
+					@media screen and ( max-width: 576px )
+						font-size: 16px
 		.item-develope
 			display: flex
 			justify-content: space-between

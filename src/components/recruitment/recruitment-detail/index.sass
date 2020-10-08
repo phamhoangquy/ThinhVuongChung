@@ -232,9 +232,13 @@
 		padding-top: 20px
 		strong
 			span
-			color: #fbbf33
-			padding-left: 20px
-			font-size: 18px
+				color: #fbbf33
+				padding-left: 20px
+				font-size: 18px
+				@media screen and ( max-width: 576px )
+					font-size: 16px
+					padding-left: 10px
+			
 		em
 			color: #fbbf33
 			font-size: 18px
@@ -245,6 +249,8 @@
 			display: flex
 			padding: 10px 0 0 20px
 			position: relative
+			@media screen and ( max-width: 576px )
+				font-size: 14px
 			&:before
 				// content: ''
 				position: absolute
@@ -352,7 +358,7 @@
 	h4
 		font-size: 16px
 		font-weight: 600
-		color: #034da2
+		color: #333333
 		text-transform: uppercase
 		margin-bottom: 20px
 		@media (min-width: 992px)
@@ -416,12 +422,13 @@
 			align-items: center
 			border-radius: 0
 			border: 0
-			background: #b96e2b
+			background: #fbbf33
 			color: #fff
+			border-radius: 50px
 			text-transform: uppercase
 .form-apply
 	height: 740px!important
-	width: 80%
+	width: 50%
 	display: none
 	margin-top: 40px
 	padding: 0
@@ -429,7 +436,7 @@
 		display: block
 	@media (min-width: 623px)
 		height: 420px!important
-		width: 80%
+		width: 50%
 	iframe
 		border: 0
 		background: white
