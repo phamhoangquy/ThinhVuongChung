@@ -35,10 +35,13 @@
 						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 					</div>
 					<div class="readmore">
-						<a>
+						<a data-fancybox="" >
+							<xsl:attribute name="data-src">
+								<xsl:text disable-output-escaping="yes">#modal-lvhd-</xsl:text>
+								<xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+							</xsl:attribute>
 							<xsl:attribute name="href">
 								<xsl:text disable-output-escaping="yes">javascript:;</xsl:text>
-								<!-- <xsl:value-of select="Url"></xsl:value-of> -->
 							</xsl:attribute>
 							<xsl:attribute name="title">
 								<xsl:value-of select="Title"></xsl:value-of>
@@ -52,8 +55,12 @@
 					</div>
 				</div>
 				<div class="modal container">
+					<xsl:attribute name="id">
+						<xsl:text disable-output-escaping="yes">modal-lvhd-</xsl:text>
+						<xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+					</xsl:attribute>
 					<div class="col-xl-12">
-						<div class="close-btn ri-close-line"></div>
+						<!-- <div class="close-btn ri-close-line"></div> -->
 						<div class="row">
 							<div class="col-xl-6 col-sm-6">
 								<div class="card_img">
