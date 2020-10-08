@@ -47,7 +47,7 @@
 						<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 					</div>
 					<div class="card_title_zone_media">
-						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+						<p><xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of></p>
 					</div>
 					<div class="icon"><em class="material-icons">arrow_right_alt</em></div>
 				</div>

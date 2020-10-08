@@ -31,7 +31,7 @@
 						<div class="form_apply_hr_detail">
 							<div class="apply-form">
 								<div class="btn button-apply">
-									<a href='javascript:void(0)' >Ứng tuyển ngay</a>
+									<a href='javascript:void(0)' >Ứng tuyển</a>
 								</div>
 								<div class="btn button-download">
 									<a class=" " download="">

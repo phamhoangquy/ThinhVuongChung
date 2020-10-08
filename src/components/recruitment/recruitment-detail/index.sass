@@ -51,7 +51,7 @@
 			tbody
 				tr 
 					width: 100%
-					height: 50px
+					height: 40px
 					&:nth-child(1)
 						background: #f3f3f3
 					&:nth-child(3)
@@ -63,7 +63,7 @@
 					&:nth-child(9)
 						background: #f3f3f3
 					th 
-						padding-left: 15px
+						padding-left: 30px
 		p
 			padding-bottom: 30px
 			padding-top: 30px
@@ -157,7 +157,7 @@
 				display: flex
 				align-items: center
 				justify-content: center
-				border: 1px solid #fbbf33
+				border: 1px solid #c7931c
 				margin-bottom: 10px
 				a 
 					color: #fbbf33
@@ -172,7 +172,7 @@
 				display: flex
 				align-items: center
 				justify-content: center
-				border: 1px solid #fbbf33
+				border: 1px solid #c7931c
 				a 
 					color: #fbbf33
 				&:hover
@@ -185,7 +185,7 @@
 		padding-top: 45px
 		.card-title-right
 			background: #fbbf33
-			padding: 15px
+			padding: 10px
 			border-radius: 5px
 			h3
 				font-size: 18px
@@ -193,7 +193,7 @@
 		.content_hr_detail_right
 			box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
 			.hr_detail_right_list
-				padding: 20px
+				padding: 15px
 				ul
 					list-style: none
 					padding: 0
@@ -209,6 +209,7 @@
 							padding-bottom: 20px
 							time
 								font-size: 12px
+								color: #999999
 						&:nth-child(2)
 							border-top: 1px solid #e0e0e0
 							.title_hr_detail_right
@@ -225,6 +226,46 @@
 							border-top: 1px solid #e0e0e0
 							.title_hr_detail_right
 								padding-top: 20px
+.hr_list_content
+	// padding-top: 30px
+	h2
+		padding-top: 20px
+		strong
+			span
+			color: #fbbf33
+			padding-left: 20px
+			font-size: 18px
+		em
+			color: #fbbf33
+			font-size: 18px
+	ul
+		padding: 0
+		list-style: none
+		li
+			display: flex
+			padding: 10px 0 0 20px
+			position: relative
+			&:before
+				// content: ''
+				position: absolute
+				pointer-events: none
+				left: 0
+				top: 10px
+				z-index: 9
+				transition: .3s all ease-in-out
+				font-family: "Linearicons-Free"
+				content: '\e876'
+				font-size: 10px
+			em 
+				font-size: 14px
+			p 
+				font-size: 14px
+				padding-left: 15px
+	table
+		margin-top: 20px
+
+.fancybox-content
+	overflow: hidden
 .button-wrapper-recruitment
 	width: 100%
 .apply-form
@@ -242,12 +283,12 @@
 		display: flex
 		align-items: center
 		justify-content: center
-		border: 1px solid #fbbf33
+		border: 1px solid #c7931c
 		margin-bottom: 10px
 		a 
-			color: #fbbf33
+			color: #c7931c
 		&:hover
-			background: #fbbf33
+			background: #c7931c
 			cursor: pointer
 			a 
 				color: #ffffff
@@ -257,17 +298,18 @@
 		display: flex
 		align-items: center
 		justify-content: center
-		border: 1px solid #fbbf33
+		border: 1px solid #c7931c
 		a 
-			color: #fbbf33
+			color: #c7931c
 		&:hover
-			background: #fbbf33
+			background: #c7931c
 			cursor: pointer
 			a 
 				color: #ffffff
 //Declare some global css
 .apply-frm
 	margin: 0
+	padding: 20px
 	// display: none
 	input[type="file"]
 		left: 0
@@ -379,6 +421,7 @@
 			text-transform: uppercase
 .form-apply
 	height: 740px!important
+	width: 80%
 	display: none
 	margin-top: 40px
 	padding: 0
@@ -386,11 +429,14 @@
 		display: block
 	@media (min-width: 623px)
 		height: 420px!important
+		width: 80%
 	iframe
 		border: 0
 		background: white
 		width: 100%
 		height: 100%
+
+
 
 .modal-wrapper.modal-apply
 	display: inline-block

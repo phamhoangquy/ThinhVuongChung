@@ -220,7 +220,7 @@
 		</li>
 	</xsl:template>
 	<xsl:template match="News" mode="Zone4-News">
-		<div class="col-6 col-md-3 col-lg-3">
+		<div class="col-12 col-md-6 col-lg-3">
 			<div class="about-3">
 				<div class="card_img">
 					<div class="img">

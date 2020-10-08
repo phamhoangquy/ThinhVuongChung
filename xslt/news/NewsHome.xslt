@@ -35,7 +35,7 @@
 								<xsl:attribute name="target">
 									<xsl:value-of select="Target"></xsl:value-of>
 								</xsl:attribute>
-								<xsl:text disable-output-escaping="yes">về chúng tôi</xsl:text> 
+								<xsl:text disable-output-escaping="yes">Về chúng tôi</xsl:text> 
 								<span class="ri-arrow-right-circle-line">
 								</span>
 							</a>
