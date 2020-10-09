@@ -1,10 +1,12 @@
 .block__tool
 	position: fixed
 	top: 207px
-	right: 0
+	right: 20px
 	z-index: 99
 	opacity: 1
 	transition: ease-in-out all .3s
+	@media screen and ( max-width: 576px)
+		right: 0
 	ul
 		padding: 0
 		list-style: non

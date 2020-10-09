@@ -27,8 +27,8 @@
 					<div class="col-lg-6"></div>
 					<div class="col-lg-6">
 						<div class="development-swiper-wrapper">
-							<div class="nav-arrow-prev"><em class="ri-arrow-left-circle-line"></em></div>
-							<div class="nav-arrow-next"><em class="ri-arrow-right-circle-line"></em></div>
+							<div class="nav-arrow-prev"><em class="ri-arrow-left-line"></em></div>
+							<div class="nav-arrow-next"><em class="ri-arrow-right-line"></em></div>
 						</div>
 						<div class="swiper-container">
 							<div class="swiper-wrapper">

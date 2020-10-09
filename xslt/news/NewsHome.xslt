@@ -67,15 +67,23 @@
 	<xsl:template match="News" mode="Zone2-News1">
 		<div class="col-12 col-md-6 col-lg-6">
 			<div class="card_img">
-				<div class="img">
-					<img class=" ">
-						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
+				<div class="img zoom-in">
+					<a>
+						<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
 						</xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="Title"></xsl:value-of>
+						<xsl:attribute name="title">
+						<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
-					</img>
+						<img>
+							<xsl:attribute name="src">
+								<xsl:value-of select="ImageUrl"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="alt">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+						</img>
+					</a>
 				</div>
 				<div class="content-we-2">
 					<div class="title-we-2">
@@ -104,7 +112,7 @@
 		<xsl:if test="position()&gt;1 and position()&lt;4">
 			<div class="col-12 col-md-3 col-lg-3">
 				<div class="card_img">
-					<div class="img">
+					<div class="img zoom-in">
 						<img class=" ">
 							<xsl:attribute name="src">
 								<xsl:value-of select="ImageUrl"></xsl:value-of>
@@ -262,15 +270,23 @@
 	</xsl:template>
 	<xsl:template match="News" mode="Zone5-News1">
 		<div class="card_img_big">
-			<div class="img">
-				<img class=" ">
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
+			<div class="img zoom-in">
+				<a>
+					<xsl:attribute name="href">
+					<xsl:value-of select="Url"></xsl:value-of>
 					</xsl:attribute>
-					<xsl:attribute name="alt">
-						<xsl:value-of select="Title"></xsl:value-of>
+					<xsl:attribute name="title">
+					<xsl:value-of select="Title"></xsl:value-of>
 					</xsl:attribute>
-				</img>
+					<img>
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="alt">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+					</img>
+				</a>
 			</div>
 		</div>
 		<div class="big-content-active">
@@ -303,7 +319,7 @@
 		<xsl:if test="position()&gt;1 and position()&lt;4">
 			<div class="col-12 col-md-6 col-lg-5 small-img">
 				<div class="card_img_small">
-					<div class="img">
+					<div class="img zoom-in">
 						<img class=" ">
 							<xsl:attribute name="src">
 								<xsl:value-of select="ImageUrl"></xsl:value-of>

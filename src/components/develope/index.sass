@@ -54,7 +54,7 @@
 						text-align: justify
 					&::before
 						position: absolute
-						top: 5px
+						top: 3px
 						left: 0
 						z-index: 9
 						transition: all .3s ease-in-out
@@ -198,17 +198,21 @@
 	.nav-arrow-next
 		width: 40px
 		height: 40px
-		border-radius: 10px
+		border-radius: 50px
 		display: flex
 		align-items: center
 		justify-content: center
 		color: #fbbf33
+		border: 1px solid #fbbf33
+		cursor: pointer
 		// &:hover
 		// 	background: #c7931c
 		// 	color: #fff
 		// 	cursor: pointer
 		em
-			font-size: 36px
+			font-size: 24px
+		&:focus
+			outline: none
 		@media screen and ( max-width: 1439px)
 			right: -45px
 		@media screen and ( max-width: 1350px)
@@ -223,17 +227,21 @@
 		width: 40px
 		height: 40px
 		margin-right: 20px
-		border-radius: 10px
+		border-radius: 50px
 		display: flex
 		justify-content: center
 		align-items: center
 		color: #fbbf33
+		border: 1px solid #fbbf33
+		cursor: pointer
 		em
-			font-size: 36px
+			font-size: 24px
 		// &:hover
 		// 	background: #c7931c
 		// 	color: #fff
 		// 	cursor: pointer
+		&:focus
+			outline: none
 		@media screen and ( max-width: 1439px)
 			left: -45px
 		@media screen and ( max-width: 1350px)
