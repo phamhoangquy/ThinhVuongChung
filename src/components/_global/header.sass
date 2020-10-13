@@ -7,6 +7,7 @@
 	padding: 15px 0
 	border-bottom: 1px solid #ffffff
 	transition: top 0.3s
+	background: rgba(#999999,.3)
 	.header
 		display: flex
 		align-items: center
@@ -59,7 +60,6 @@
 			li
 				margin-top: 25px
 				padding: 0 20px
-
 				a
 					color: #ffffff
 					font-size: 14px
@@ -190,3 +190,11 @@
 						border-bottom: 2px solid #ffffff
 	.sidebar.show
 		left: 0
+.header_top
+	.header_menu
+		.ModuleContent
+			.main-menu
+				li
+					&:active
+						a
+							border-bottom: 1px solid #ffffff

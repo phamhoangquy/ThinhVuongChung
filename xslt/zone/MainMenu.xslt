@@ -10,7 +10,7 @@
         <li>
             <xsl:if test="IsActive='true'">
                 <xsl:attribute name="class">
-                    <xsl:text disable-output-escaping="yes">active</xsl:text>
+                    <xsl:text>active</xsl:text>
                 </xsl:attribute>
             </xsl:if>
             <a>
@@ -20,10 +20,7 @@
                 <xsl:attribute name="title">
                     <xsl:value-of select="Title"></xsl:value-of>
                 </xsl:attribute>
-                <xsl:attribute name="target">
-                    <xsl:value-of select="Target"></xsl:value-of>
-                </xsl:attribute>
-                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                <xsl:value-of select="Title"></xsl:value-of>
             </a>
         </li>
     </xsl:template>

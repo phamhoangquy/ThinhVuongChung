@@ -2,13 +2,13 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 <xsl:output method="html" indent="yes"/>
 	<xsl:template match="/">
+		<div class="head-menu">
+			<ul class="link-to-about-section">
+				<xsl:apply-templates select="/ZoneList/Zone" mode="Zone-Nav"></xsl:apply-templates>
+			</ul>
+		</div>
 		<section class="block_about" id="section-about-1">
 			<div class="container">
-				<div class="head-menu">
-					<ul class="link-to-about-section">
-						<xsl:apply-templates select="/ZoneList/Zone" mode="Zone-Nav"></xsl:apply-templates>
-					</ul>
-				</div>
 				<xsl:apply-templates select="/ZoneList/Zone[1]/News[1]" mode="Zone1-News1"></xsl:apply-templates>
 				
 			</div>
@@ -89,6 +89,7 @@
 				</div>
 			</div>
 		</section>
+		
 	</xsl:template>
 	<xsl:template match="Zone" mode="Zone-Nav">
 		<li> 

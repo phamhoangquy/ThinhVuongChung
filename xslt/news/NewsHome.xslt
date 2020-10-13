@@ -181,7 +181,7 @@
 										<xsl:attribute name="target">
 											<xsl:value-of select="Target"></xsl:value-of>
 										</xsl:attribute>
-										<xsl:text disable-output-escaping="yes">khám phá thêm</xsl:text>
+										<xsl:text disable-output-escaping="yes">Khám phá thêm</xsl:text>
 										
 										<span class="ri-arrow-right-circle-line"></span>
 									</a>
