@@ -14,6 +14,7 @@
         "src/_plugins/mapping.js",
         "bower_components/swiper/dist/js/swiper.js",
         "src/_plugins/medium-zoom.js",
+        "bower_components/aos/dist/aos.js",
         "bower_components/fancybox/dist/jquery.fancybox.min.js"
 
     ],
@@ -22,6 +23,7 @@
         "src/_plugins/grid.css",
         "src/_plugins/remixicon.css",
         "bower_components/swiper/dist/css/swiper.css",
+        "bower_components/aos/dist/aos.css",
         "bower_components/fancybox/dist/jquery.fancybox.css"
     ]
 }

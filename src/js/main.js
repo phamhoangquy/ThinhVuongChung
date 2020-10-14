@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    AOS.init({
+        offset: 50,
+        duration: 900,
+    });
     setBackgroundElement();
     swiperInit();
     aboutHistory();
@@ -6,7 +10,10 @@ $(document).ready(function() {
     showBackToTop();
     fancyboxModal();
     cloneMenu();
-    loading();
+    AOS.init();
+    setTimeout(() => {
+        $("#l_0").trigger("click");
+    }, 500);
     // toggleApplyForm();
 });
 
