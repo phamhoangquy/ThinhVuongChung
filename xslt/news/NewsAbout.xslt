@@ -20,7 +20,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about3_history" id="about3_history">
+		<section class="about3_history" id="section-about-2">
 			<div class="container">
 				
 				<div class="card_history">
@@ -41,7 +41,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="block_about-2" id="section-about-2">
+		<section class="block_about-2" id="section-about-3">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-6">
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="block_about-3" id="section-about-3">
+		<section class="block_about-3" id="section-about-4">
 			<div class="container">
 				<div class="head-title">
 					<h2><xsl:value-of select="/ZoneList/Zone[4]/Title" disable-output-escaping="yes"></xsl:value-of></h2>
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="block_about-4" id="section-about-4">
+		<section class="block_about-4" id="section-about-5">
 			<div class="container">
 				<div class="head-title">
 					<h2><xsl:value-of select="/ZoneList/Zone[5]/Title" disable-output-escaping="yes"></xsl:value-of></h2>
