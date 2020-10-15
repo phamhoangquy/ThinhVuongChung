@@ -24,27 +24,6 @@ const toggleMenuMobile = () => {
         $('body').toggleClass('disabled');
     });
 };
-if ($(document).ready(function() {
-        new Vivus("logo", {
-            // type: "oneByOne",
-            duration: 110,
-            start: "autostart",
-            forceRender: !1,
-            dashGap: 0,
-            selfDestroy: !0
-        }, function() {
-            window.console && ($(".cls-1").css("fill", "#1b75bc"), $(".cls-2").css("fill", "#1b75bc"), $("path").attr("stroke-width", "0"))
-        });
-    }));
-
-function loading() {
-    $(window).on('load', function() {
-        $('#loading-container').delay(1800).queue(function(next) {
-            $(this).addClass('complete')
-            next();
-        })
-    })
-}
 
 function setBackgroundElement() {
     $('[setBackground]').each(function() {

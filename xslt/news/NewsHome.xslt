@@ -18,7 +18,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10">
-						<div class="block-title">
+						<div class="block-title" data-aos="fade-up">
 							<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
 						</div>
 						<div class="text-we">
@@ -49,10 +49,10 @@
 		<section class="block_we-2">
 			<div class="container-custom">
 				<div class="container">
-					<div class="block-title">
+					<div class="block-title" data-aos="fade-up" data-aos-duration="3000">
 						<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
 					</div>
-					<div class="text-we-2">
+					<div class="text-we-2" data-aos="fade-up" data-aos-duration="3000">
 						<xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 	</xsl:template>
 	<xsl:template match="News" mode="Zone2-News1">
 		<div class="col-12 col-md-6 col-lg-6">
-			<div class="card_img">
+			<div class="card_img" data-aos="zoom-in">
 				<div class="img zoom-in">
 					<a>
 						<xsl:attribute name="href">
@@ -111,7 +111,7 @@
 	<xsl:template match="News" mode="Zone2-News2">
 		<xsl:if test="position()&gt;1 and position()&lt;4">
 			<div class="col-12 col-md-3 col-lg-3">
-				<div class="card_img">
+				<div class="card_img" data-aos="zoom-in">
 					<div class="img zoom-in">
 						<img class=" ">
 							<xsl:attribute name="src">
@@ -152,7 +152,7 @@
 				<div class="row">
 					<div class="col-12 col-md-3 col-lg-4"></div>
 					<div class="col-12 col-md-9 col-lg-8">
-						<div class="why-choose-us">
+						<div class="why-choose-us" data-aos="fade-up" data-aos-duration="3000">
 							<div class="card_img">
 								<div class="img">
 									<img class=" ">
@@ -199,10 +199,10 @@
 				<xsl:value-of select="ImageUrl" disable-output-escaping="yes"></xsl:value-of>
 			</xsl:attribute>
 			<div class="container">
-				<div class="block-title">
+				<div class="block-title" data-aos="fade-up" data-aos-duration="3000">
 					<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
 				</div>
-				<div class="text-especially">
+				<div class="text-especially" data-aos="fade-up" data-aos-duration="3000">
 					<xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
 				</div>
 				<div class="row">
@@ -214,7 +214,7 @@
 	</xsl:template>
 	<xsl:template match="News" mode="Zone4-News">
 		<div class="col-6 col-md-6 col-lg-3">
-			<div class="card-img percent-25">
+			<div class="card-img percent-25" data-aos="fade-up">
 				<div class="img dot">
 					<img class=" ">
 						<xsl:attribute name="src">
@@ -238,7 +238,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 big-img">
-						<div class="block-title-active">
+						<div class="block-title-active" data-aos="fade-right">
 							<div class="block-title">
 								<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
 							</div>
@@ -269,7 +269,7 @@
 		</section>
 	</xsl:template>
 	<xsl:template match="News" mode="Zone5-News1">
-		<div class="card_img_big">
+		<div class="card_img_big" data-aos="fade-up">
 			<div class="img zoom-in">
 				<a>
 					<xsl:attribute name="href">
@@ -318,7 +318,7 @@
 	<xsl:template match="News" mode="Zone5-News2">
 		<xsl:if test="position()&gt;1 and position()&lt;4">
 			<div class="col-12 col-md-6 col-lg-5 small-img">
-				<div class="card_img_small">
+				<div class="card_img_small" data-aos="fade-up">
 					<div class="img zoom-in">
 						<img class=" ">
 							<xsl:attribute name="src">
@@ -364,10 +364,10 @@
 				<xsl:value-of select="ImageUrl" disable-output-escaping="yes"></xsl:value-of>
 			</xsl:attribute>
 			<div class="container">
-				<div class="block-title">
+				<div class="block-title" data-aos="fade-left">
 					<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
 				</div>
-				<div class="text-project">
+				<div class="text-project" data-aos="fade-left">
 					<xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
 				</div>
 				<div class="home-project-swiper-wrapper">
@@ -398,7 +398,7 @@
 		</section>
 	</xsl:template>
 	<xsl:template match="Zone" mode="Zone6-Zone">
-		<div class="swiper-slide">
+		<div class="swiper-slide" data-aos="fade-up">
 			<div class="card-body">
 				<div class="img">
 					<img class=" ">
