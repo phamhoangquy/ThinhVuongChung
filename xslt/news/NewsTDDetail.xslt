@@ -34,7 +34,7 @@
 									<a href='javascript:void(0)' >Ứng tuyển</a>
 								</div>
 								<div class="btn button-download">
-									<a class=" " download="/Data/Sites/1/media/recruitment/mau-ho-so-ung-tuyen-tvc.doc">
+									<a class=" " download="mau-ho-so-ung-tuyen-tvc.doc">
 										<xsl:attribute name="href">
 											<xsl:value-of select="FileUrl"></xsl:value-of>
 										</xsl:attribute>

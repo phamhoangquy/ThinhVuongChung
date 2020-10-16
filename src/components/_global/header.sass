@@ -7,7 +7,7 @@
 	padding: 15px 0
 	border-bottom: 1px solid #ffffff
 	transition: top 0.3s
-	background: rgba(#999999,.3)
+	background: rgba(#999999,.2)
 	.header
 		display: flex
 		align-items: center
@@ -64,9 +64,11 @@
 					color: #ffffff
 					font-size: 14px
 					padding: 5px 0
-					&:active
+				&:hover
+					a
 						border-bottom: 1px solid #ffffff
-					&:hover
+				&.active
+					a
 						border-bottom: 1px solid #ffffff
 
 .header_bot
@@ -151,10 +153,12 @@
 					color: #111111
 					font-size: 14px
 					padding: 5px 0
-					&:active
+				&.active
+					a
 						color: #111111
 						border-bottom: 1px solid #111111
-					&:hover
+				&:hover
+					a
 						color: #111111
 						border-bottom: 1px solid #111111
 				i
