@@ -118,7 +118,9 @@ Facebook: https://fb.com/canhcam.vn
 
                                 </div>
                                 <div class="header_right">
-                                    <div class="search_top"><i class="ri-search-line"></i></div>
+                                    <div class="search_top">
+                                        <i class="ri-search-line"></i>
+                                    </div>
                                     <portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
 
                                 </div>
@@ -146,9 +148,9 @@ Facebook: https://fb.com/canhcam.vn
                                     </div>
                                     <div class="search_top"><i class="ri-search-line"></i></div>
                                     <select>
-									<option>EN</option>
-									<option>VN</option>
-								</select>
+                                        <option>EN</option>
+                                        <option>VN</option>
+                                    </select>
                                     <div class="button_menu"><i class="fas fa-bars"></i></div>
                                 </div>
                             </div>
@@ -158,6 +160,13 @@ Facebook: https://fb.com/canhcam.vn
                         </div>
                     </div>
                 </header>
+                <div class="block_search">
+                    <div class="search_data">
+                        <input type="text" placeholder="Tim kiem">
+                        <div class="btn-search"><i class="ri-search-line"></i></div>
+                    </div>
+                    <div class="close_search"><i class="ri-close-line"></i></div>
+                </div>
                 <!-- ////////////// End Header ////////////// -->
                 <!-- ////////////// Main ////////////// -->
                 <main>

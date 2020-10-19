@@ -142,6 +142,10 @@ function tabActive() {
         $("#" + display).addClass("active");
     });
 }
+$('.search_top, .close_search').click(function() {
+    $(this).toggleClass("click");
+    $('.block_search').toggleClass("show");
+});
 
 function swiperInit() {
     var homerSwiper = new Swiper(".home-banner .swiper-container", {
