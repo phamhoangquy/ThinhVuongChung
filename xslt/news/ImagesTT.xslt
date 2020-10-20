@@ -4,7 +4,6 @@
 	<xsl:template match="/">
 		<div class="row">
 			<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
-			
 		</div>
 	</xsl:template>
 	<xsl:template match="News">
@@ -17,7 +16,7 @@
 								<xsl:text>gallery-</xsl:text>
 							</xsl:attribute>
 							<xsl:attribute name="href">
-								<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+								<xsl:value-of disable-output-escaping="yes" select="ImageUrl"></xsl:value-of>
 							</xsl:attribute>
 							<xsl:attribute name="title">
 								<xsl:value-of select="Title"></xsl:value-of>
@@ -38,8 +37,8 @@
 						</div>
 					</xsl:if>
 					<div class="caption">
-						<div class="icon">
-							<img src="/Data/Sites/1/skins/default/img/play-icon.png" alt=""/>
+						<div class="icon-library">
+							<i class="ri-image-2-line"></i>
 						</div>
 					</div>
 				</div>

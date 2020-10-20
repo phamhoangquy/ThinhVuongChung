@@ -16,6 +16,7 @@
 					width: 100%
 					height: 100%
 					object-fit: cover
+
 			.text_media
 				.text
 					background: #902906
@@ -75,3 +76,44 @@
 					a
 						&:hover
 							color: #fbbf33
+
+.middle-fullwidth
+	.block_media
+		.item-media
+			position: relative
+			.card_img
+				.img
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						left: 0
+						bottom: 0
+						width: 100%
+						height: 100%
+						background: rgba(#222,.3)
+						pointer-events: none
+						z-index: 9
+					&:after
+						z-index: 9
+						content: ''
+						display: block
+						position: absolute
+						left: 0
+						bottom: 0
+						right: 0
+						top: 0
+						background: rgba(#222,.5)
+						pointer-events: none
+						transition: .3s all ease-in-out
+						opacity: 0
+			.caption
+				position: absolute
+				bottom: 45%
+				left: 45%
+				.icon-library
+					i
+						font-size: 36px
+						color: #ffffff
+
+
