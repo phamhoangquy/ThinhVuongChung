@@ -121,8 +121,15 @@ Facebook: https://fb.com/canhcam.vn
                                     <div class="search_top">
                                         <i class="ri-search-line"></i>
                                     </div>
-                                    <portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
-
+                                    <div class="language-wrap">
+                                        <div class="language dropdown"><a class="current" href="http://thinhvuongchung.vn">VN<span class="mdi mdi-chevron-down"></span></a>
+                                            <div class="dropdown-content">
+                                                <ul class="list-reset">
+                                                    <li><a href="http://thinhvuongchung.vn/en-US/Default.aspx" title="English">EN</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="header_menu">
@@ -147,10 +154,20 @@ Facebook: https://fb.com/canhcam.vn
                                         <portal:ModuleWrapper ID="mdl143" runat="server" ConfigureModuleId="143" />
                                     </div>
                                     <div class="search_top"><i class="ri-search-line"></i></div>
-                                    <select>
+                                    <div class="language-wrap">
+                                        <div class="language dropdown">
+                                            <a class="current" href="http://thinhvuongchung.vn">VN<span class="mdi mdi-chevron-down"></span></a>
+                                            <div class="dropdown-content">
+                                                <ul class="list-reset">
+                                                    <li><a href="http://thinhvuongchung.vn/en-US/Default.aspx" title="English">EN</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <select>
                                         <option>EN</option>
                                         <option>VN</option>
-                                    </select>
+                                    </select> -->
                                     <div class="button_menu"><i class="fas fa-bars"></i></div>
                                 </div>
                             </div>

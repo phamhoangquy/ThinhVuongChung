@@ -6,8 +6,8 @@
 		<xsl:apply-templates select="/ZoneList/Zone[2]" mode="Zone2"></xsl:apply-templates>
 		<xsl:apply-templates select="/ZoneList/Zone[3]" mode="Zone3"></xsl:apply-templates>
 		<xsl:apply-templates select="/ZoneList/Zone[4]" mode="Zone4"></xsl:apply-templates>
-		<xsl:apply-templates select="/ZoneList/Zone[5]" mode="Zone5"></xsl:apply-templates>
-		<xsl:apply-templates select="/ZoneList/Zone[6]" mode="Zone6"></xsl:apply-templates>
+		<!-- <xsl:apply-templates select="/ZoneList/Zone[5]" mode="Zone5"></xsl:apply-templates>
+		<xsl:apply-templates select="/ZoneList/Zone[6]" mode="Zone6"></xsl:apply-templates> -->
 		
 	</xsl:template>
 	<xsl:template match="Zone" mode="Zone1">
@@ -233,7 +233,7 @@
 			</div>
 		</div>
 	</xsl:template>
-	<xsl:template match="Zone" mode="Zone5">
+	<!-- <xsl:template match="Zone" mode="Zone5">
 		<section class="block_active-us">
 			<div class="container">
 				<div class="row">
@@ -415,5 +415,5 @@
 				</div>
 			</div>
 		</div>
-	</xsl:template>
+	</xsl:template> -->
 </xsl:stylesheet>
