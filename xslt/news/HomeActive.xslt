@@ -6,25 +6,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 big-img">
-						<div class="block-title-active" data-aos="fade-right">
-							<div class="block-title">
-								<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
-							</div>
-							<div class="btn-view-more">
-								<a class=" ">
-									<xsl:attribute name="href">
-										<xsl:value-of select="Url"></xsl:value-of>
-									</xsl:attribute>
-									<xsl:attribute name="title">
-										<xsl:value-of select="Title"></xsl:value-of>
-									</xsl:attribute>
-									<xsl:attribute name="target">
-										<xsl:value-of select="Target"></xsl:value-of>
-									</xsl:attribute>
-									<xsl:text disable-output-escaping="yes">Xem tất cả</xsl:text>
-								</a>
-							</div>
-						</div>
 						<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 					</div>
 				</div>

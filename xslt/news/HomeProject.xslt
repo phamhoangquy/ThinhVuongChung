@@ -9,7 +9,7 @@
 			</xsl:attribute> -->
 			<div class="container">
 				<div class="block-title" data-aos="fade-left">
-					<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
+					<h2><xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of></h2>
 				</div>
 				<div class="text-project" data-aos="fade-left">
 					<xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
@@ -22,18 +22,7 @@
 							<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 						</div>
 						<div class="btn-view-more">
-							<a class=" ">
-								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="target">
-									<xsl:value-of select="Target"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:text disable-output-escaping="yes">Xem tất cả</xsl:text>
-							</a>
+							<a href="http://thinhvuongchung.vn/du-an">Xem tất cả</a>
 						</div>
 					</div>
 				</div>

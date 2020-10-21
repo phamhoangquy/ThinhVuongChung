@@ -1,5 +1,5 @@
 .block_active-us
-	padding: 70px 0 0 0
+	// padding: 70px 0 0 0
 	.row
 		display: flex
 		justify-content: center
@@ -16,7 +16,7 @@
 			@media screen and ( max-width: 576px )
 				display: flex
 				justify-content: flex-start
-	.btn-view-more
+	.view-more
 		@media screen and ( max-width: 576px )
 			padding-top: 20px
 		a
@@ -30,8 +30,7 @@
 			display: flex
 			justify-content: center
 			align-items: center
-		&:hover
-			a
+			&:hover
 				color: #ffffff
 				background: #fbbf33
 				border: none
@@ -101,17 +100,23 @@
 				align-items: center
 				span
 					padding-left: 10px
-	.big-img
-		&:hover
-			cursor: pointer
-			.big-content-active
-				.btn-view
-					a
+				&:hover
+					color: #ffffff
+					background: #fbbf33
+					border: none
+					span
 						color: #ffffff
-						background: #fbbf33
-						border: none
-						span
-							color: #ffffff
+	// .big-img
+	// 	&:hover
+	// 		cursor: pointer
+	// 		.big-content-active
+	// 			.btn-view
+	// 				a
+	// 					color: #ffffff
+	// 					background: #fbbf33
+	// 					border: none
+	// 					span
+	// 						color: #ffffff
 	.small-content-active
 		display: flex
 		justify-content: space-between
@@ -166,3 +171,41 @@
 	
 .pages.newspager
 	display: none
+
+.middle-fullwidth
+	.active-us
+		padding-top: 55px
+		.row
+			display: flex
+			justify-content: center
+			align-items: center
+		.block-title-active
+			display: flex
+			justify-content: space-between
+			@media screen and ( max-width: 576px )
+				display: block
+			.block-title
+				display: flex
+				justify-content: center
+				align-items: center
+				@media screen and ( max-width: 576px )
+					display: flex
+					justify-content: flex-start
+		.view-more
+			@media screen and ( max-width: 576px )
+				padding-top: 20px
+			a
+				color: #999999
+				border: 1px solid rgb(153, 153, 153)
+				border-width: 2px
+				border-color: rgb(153, 153, 153)
+				border-radius: 25px
+				width: 120px
+				height: 40px
+				display: flex
+				justify-content: center
+				align-items: center
+				&:hover
+					color: #ffffff
+					background: #fbbf33
+					border: none
