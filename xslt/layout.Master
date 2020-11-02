@@ -118,9 +118,9 @@ Facebook: https://fb.com/canhcam.vn
 
                                 </div>
                                 <div class="header_right">
-                                    <div class="search_top">
+                                    <a class="search_top">
                                         <i class="ri-search-line"></i>
-                                    </div>
+                                    </a>
                                     <div class="language-wrap">
                                         <div class="language dropdown"><a class="current" href="http://thinhvuongchung.vn">VN<span class="mdi mdi-chevron-down"></span></a>
                                             <div class="dropdown-content">
@@ -153,7 +153,9 @@ Facebook: https://fb.com/canhcam.vn
                                     <div class="menu">
                                         <portal:ModuleWrapper ID="mdl143" runat="server" ConfigureModuleId="143" />
                                     </div>
-                                    <div class="search_top"><i class="ri-search-line"></i></div>
+                                    <div class="search_top">
+                                        <i class="ri-search-line"></i>
+                                    </div>
                                     <div class="language-wrap">
                                         <div class="language dropdown">
                                             <a class="current" href="http://thinhvuongchung.vn">VN<span class="mdi mdi-chevron-down"></span></a>
@@ -179,8 +181,11 @@ Facebook: https://fb.com/canhcam.vn
                 </header>
                 <div class="block_search">
                     <div class="search_data">
-                        <input type="text" placeholder="Tim kiem">
-                        <div class="btn-search"><i class="ri-search-line"></i></div>
+                        <!-- <input type="text" placeholder="Tim kiem">
+                        <div class="btn-search">
+                            <i class="ri-search-line"></i>
+                        </div> -->
+                        <portal:ModuleWrapper ID="mdl194" runat="server" ConfigureModuleId="194" />
                     </div>
                     <div class="close_search"><i class="ri-close-line"></i></div>
                 </div>
