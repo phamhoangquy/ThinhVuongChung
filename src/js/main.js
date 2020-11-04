@@ -315,10 +315,10 @@ function scrollFunction() {
     }
 }
 
-// $('.button_menu').click(function() {
-//     $(this).toggleClass("click");
-//     $('.sidebar').toggleClass("show");
-// });
+$('.button_menu').click(function() {
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+});
 
 // Modal
 // $('.readmore').click(function () {
