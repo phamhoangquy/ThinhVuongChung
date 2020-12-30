@@ -1,5 +1,6 @@
 $(document).ready(function() {
     AOS.init({
+        disable: "mobile",
         offset: 50,
         duration: 900,
     });
@@ -10,7 +11,6 @@ $(document).ready(function() {
     showBackToTop();
     fancyboxModal();
     cloneMenu();
-    AOS.init();
     setTimeout(() => {
         $("#l_0").trigger("click");
     }, 500);
